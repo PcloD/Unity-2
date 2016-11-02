@@ -36,7 +36,7 @@ public class AnimatedTexture : MonoBehaviour {
 	{
         mainmaterial.SetTexture ("_MainTex", textureList [counter]);
         if (++counter >= textureList.Count) {
-			counter = 0;
-		}
-	}
+            counter = 0;
+        }
+    }
 }
