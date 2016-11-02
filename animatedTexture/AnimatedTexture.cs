@@ -34,9 +34,9 @@ public class AnimatedTexture : MonoBehaviour {
 
 	void Texturechanger()
 	{
-		if (++counter >= textureList.Count) {
+        mainmaterial.SetTexture ("_MainTex", textureList [counter]);
+        if (++counter >= textureList.Count) {
 			counter = 0;
 		}
-		mainmaterial.SetTexture ("_MainTex", textureList [counter]);
 	}
 }
